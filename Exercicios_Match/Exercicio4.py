@@ -12,7 +12,7 @@ Entrada → [10, 20, 30]
 Saída → Lista
 """
 
-dados = "gandas cenas mê putz 123" 
+dados = "gandas cenas mê menino" 
 numeros = "0123456789"
 
 match dados:

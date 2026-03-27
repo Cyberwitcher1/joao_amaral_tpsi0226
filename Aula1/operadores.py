@@ -1,76 +1,99 @@
-# operadores aritemeticos
+'''
+==========================================
+COMENTÁRIOS E TIPOS DE DADOS EM PYTHON
+==========================================
+'''
 
-# soma + sub -, div /, Mult *, mode % (resto da div), ** exponential
+# Comentário de uma linha utiliza o símbolo #
 
-total=0
-num=0
-num=0
+# ---------------------------------
+# OUTPUT (SAÍDA) PARA A CONSOLA
+# ---------------------------------
 
-#input
-num1=int(input("Insira número 1"))
-num2=int(input("Insira número 2"))
-num3=int(input("Insira número 3"))
-
-total=num1+num2
-print(f"soma : {total}")
-
-total=num1-num2
-print(f"sub : ",total," .")
-
-total=num1/num2
-print(f"div : {total}")
-
-total=num1*num2
-print("Mult : ",total," .")
-
-# operadores de decisao
-
-# == igualdade, != diferente, > maior que, < menor que
-# >= maior ou igual e <=menor ou igual
-
-# expressao 
-# Val1 == Val2 = True/False
-
-# operadores lógicos
-
-# and e o or
-
-# expressao
-# val1 > val2 and val2 > val3 = true/false
-
-#Exercicio encontra o maior e o menor
-# If
-val1=2
-val2=3
-val3=4
-
-if val1>val2 and val2>val3:
-    print("valor 1 é o maior, valor 3 é o menor")
-elif val1>val3 and val3>val2:
-    print("valor 1 é o maior, valor 2 é o menor")
-elif val2>val1 and val1>val3:
-    print("valor 2 é o maior, valor 3 é o menor")
-elif val2>val3 and val1>val2:
-    print("valor 2 é o maior, valor 2 o menor")
-elif val3>val1 and val1>val2:
-    print("valor 3 é o maior,valor 2 é o menor")
-elif val3>val2 and val2>val3:
-    print("valor 3 é o maior,valor 3 é o menor")
+print("Hello World TPSI0226")
 
 
-#match case (3,10 up)    
-opc=int(input(0))
+# ---------------------------------
+# INT (Número Inteiro)
+# ---------------------------------
 
-print("Prima 1 para bom dia")
-print("Prima 2 para boa tarde")
-print("Prima 3 para sair")
+tel = 9   # número inteiro (int)
+print("\nTipo da variável tel:")
+print(type(tel))
+print("Valor de tel:")
+print(tel)
 
-match opc:
-    case "1":
-        print("Bom dia")
-    case "2":
-        print("Boa noite")
-    case "3":
-        print("Sair do programa")
-    case _:
-        print("Errou opção")
+# Python é uma linguagem de tipagem dinâmica
+# A mesma variável pode mudar de tipo automaticamente
+
+tel = "9"   # agora é uma STRING (texto), já não é número
+
+# Atenção:
+# "9" NÃO tem valor 57.
+# Só teria valor 57 se utilizássemos: ord("9")
+
+print("\nTipo da variável tel após alteração:")
+print(type(tel))
+print("Novo valor de tel:")
+print(tel)
+
+
+# ---------------------------------
+# FLOAT (Número Decimal)
+# ---------------------------------
+
+med = 2.3
+print("\nTipo da variável med:")
+print(type(med))
+print("Valor de med:")
+print(med)
+
+
+# ---------------------------------
+# STRING (Texto)
+# ---------------------------------
+
+nom = "Dario"
+print("\nTipo da variável nom:")
+print(type(nom))
+print("Valor de nom:")
+print(nom)
+
+
+# ---------------------------------
+# BOOLEAN (Verdadeiro ou Falso)
+# ---------------------------------
+
+flag = True
+print("\nTipo da variável flag:")
+print(type(flag))
+print("Valor de flag:")
+print(flag)
+
+
+# ---------------------------------
+# LISTA []
+# ---------------------------------
+# Pode guardar vários tipos de dados
+# É MUTÁVEL (pode ser alterada)
+
+lista = [1, "dario", 4.4, False, 9]
+
+print("\nTipo da variável lista:")
+print(type(lista))
+print("Conteúdo da lista:")
+print(lista)
+
+
+# ---------------------------------
+# TUPLO ()
+# ---------------------------------
+# Parecido com a lista, mas é IMUTÁVEL
+# Não pode ser alterado depois de criado
+
+tuplo = (1, 3, 4, 6)
+
+print("\nTipo da variável tuplo:")
+print(type(tuplo))
+print("Conteúdo do tuplo:")
+print(tuplo)
