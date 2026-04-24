@@ -11,11 +11,7 @@ Como fazer:
 •	Palavras com mais minúsculas vão para o fim da lista.
 """
 
-
-
 palavras = ["PYthon", "banana", "CÓDIGO", "intELIGENTE", "dados"]
-
-
 
 def contar_minusculas(palavra):
     soma = 0
